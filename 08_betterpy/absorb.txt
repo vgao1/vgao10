@@ -1,0 +1,41 @@
+Team YVC: Victoria Gao, Yi Ling Wu, Constance Chen
+SoftDev
+K08: Cross Pollination and Virtual Insanity (Q/C/C of different approaches to K07)
+2020-10-06
+
+1. After using open(<file name>,"r") to read the csv file, some teams used csv.DictReader(<file name>) to convert each row in that file into a key-value pair
+of a dictionary.  
+
+2. Teams that didn't use csv.DictReader used split() to separate the occupation from its percentage of being chosen.  To avoid iterating through the first and last 
+rows of the CSV file, some teams deleted elements from the dictionary's key and value lists with pop and del.  Other teams skipped the first and last rows with 
+range(1, len(<dictionary) - 1) in the for loop statement.
+
+3. random.uniform(0,99.8) generates a random float between 0 and 99.8.
+
+4. Although random.randrange() returns an integer, a random float between 0 and 99.8 could be generated with 
+random.randrange(998) / 10.  
+random.randrange(998) returns an integer between 0 and 998.
+0/10 = 0 and 998/10 = 99.8 so dividing random.randrange(998) by 10 would return a decimal in the interval [0,99.8).
+
+5. We noticed that some teams used random.choices(<population>, weights = <percentages>, k=1) to randomly select an occupation 
+with relative percentage weights.  
+<population> is a list of elements with a probability of being chosen.
+<percentage> is a list of numbers representating the percent chance of being chosen, corresponds to elements in <population>.
+In K07, <population> is a list of occupations and <percentage> is a list of percentages (chance that a job would be returned).
+
+6. Another approach to randomly select an occupation is to use counter variable initialized as 0 
+and another variable that stores the value of a randomly generated number between 0 and 99.8.  
+A for loop iterates through the dictionary and compares the randomly generated number to the counter variable.  
+If the randomly generated number is less than the counter, the dictionary value (chance that a job would be returned) of this iteration is added to the counter.  
+Otherwise, the dictionary key of this iteration (occupation) is returned.
+
+7. Other teams also used a for loop, but they didn't use a counter variable.  As a for loop iterates through the dictionary, 
+a dictionary value (chance that a job would be returned) is subtracted from the random number until the random number is less than zero.  
+When the random number is less than zero, the random number falls into an interval representing an occupation and the occupation is returned.
+
+8. It is good practice to include test cases in our documentation of code so people can see how your code will run.
+
+9. Useful resources to understand the code used for K07 assignment:
+-https://docs.python.org/3/library/csv.html
+-https://docs.python.org/3/library/random.html
+ 
