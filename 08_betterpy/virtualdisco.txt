@@ -1,0 +1,20 @@
+Team YVC: Victoria Gao, Yi Ling Wu, Constance Chen
+SoftDev
+K08: Cross Pollination and Virtual Insanity (python3 -m venv ~/myherozero)
+2020-10-06
+
+"python3 -m venv ~/myherozero" creates a virtual Python environment in a directory called myherozero.  
+	-A virtual environment is a directory tree that contains Python executable files and a set of its own Python packages 
+	that is isolated from a system's directories and the libraries and scripts in other virtual environments.
+	-A "system" Python environment contains libraries that were installed as part of the machine's operating system.
+
+-After I ran "python3 -m venv ~/myherozero", a directory called myherozero was created in my home directory.  In the myherozero directory, there were 4
+directories (bin, include, lib, lib64) and a file called pyvenv.cfg
+
+-Inside the bin directory, there were 2 files: python and python3.
+
+-In both the lib and lib64 directories, there was a directory called python3.8, which contains a directory called site-packages.
+
+Sources:
+-https://docs.python.org/3/library/venv.html#venv-def
+-https://docs.python.org/3/library/venv.html#:~:text=A%20virtual%20environment%20is%20a,part%20of%20your%20operating%20system.
