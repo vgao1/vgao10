@@ -1,0 +1,33 @@
+Team YVC: Victoria Gao, Yi Ling Wu, Constance Chen
+SoftDev
+K09 -- Simple Path to Greatness (Flask app)
+2020-10-08
+
+Q0: In Java, an instance of a function is defined with syntax that is similar to Flask(__name__).  
+The text that is outside and next to the opening parentheses is usually a function's name and
+the text inside is the argument(s).  
+
+Q1: The forward slash ("/") is found in URLs and the path to a file.
+
+Q2: 
+Prediction: 
+print(__name__) inside the hello_world() will print to the server at the address @app.route("/") points to.
+This statement will print "__main__" because that is the module hello_world() is running in.
+
+After running app.py, we noticed that the specific address hello_world() prints to is 127.0.0.1:5000
+127.0.0.1 is the IP address and 5000 is the port number.
+
+Q3: 
+Prediction: return "No hablo queso" will not cause text to appear anywhere because return doesn't print text.  
+There isn't a print statement that prints what the hello_world() function returns.
+
+After running app.py, we noticed that "No hablo queso" was printed on a webpage we were directed to after we entered  
+http://127.0.0.1:5000/ into a browser's address bar.
+
+The following lines were printed in the terminal after viewing the webpage:
+__main__ 
+127.0.0.1 - - [07/Oct/2020 19:41:15] "GET / HTTP/1.1" 200 - 
+
+Q4: In Java, code that calls a method of a class is constructed similar to app.run().
+app is like a class' name and run is like the method that is called. 
+
