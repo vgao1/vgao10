@@ -20,7 +20,7 @@ if __name__ == "__main__":  # true if this file NOT imported
 
 """
 This file will produce the same results as app.py in v3 directory.
-Prediction: The terminalwill print some lines related to debugging to show
+Prediction: The terminal will print some lines related to debugging to show
 that the code is being debugged behind the scenes.
 "__main__" will be printed afterwards in the terminal on a new line.
 "No hablo queso!" will be printed on the webpage at 127.0.0.1:5000
