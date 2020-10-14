@@ -1,0 +1,25 @@
+Team YVC: Victoria Gao, Yi Ling Wu, Constance Chen
+SoftDev
+K12: ...or The Only Constant is Change? (Jinja2 templating engine)
+2020-10-14
+
+Q0: If we remove render_template from the line, the module will not be imported.
+This means that it would not be able to be used later on when it is called to open
+the file 'model_tmplt.html' in line 16. We predict that the module is used to
+open files through python.
+
+Q1: We predict that the URL we need to use to connect to that page is "http://127.0.0.1:5000/my_foist_template" 
+because app.route("/") led to "http://127.0.0.1:5000".  "my_foist_template" following "/"
+is a directory within the directory app.py is in, so we append "/" (separate the 2 directories) followed by
+"my_foist_template" to "http://127.0.0.1:5000" .  
+  
+
+Q2: In "render_template", the first input, "model_tmplt.html" determines which file
+will be opened. The next input, "foo="fooooo"" determines what will be printed in place
+of {{ foo }} in the html file. The final input, "collection=coll" determines which list
+is called and looped through in {% for item in collection %}. This will The final two variables in
+the input are passed to the template engine as arguments.
+
+Observation: We observed that when we typed "http://127.0.0.1:5000/my_foist_template" into a
+browser, the string 'fooooo' and the list 'coll' took the placeholders in the template.
+When run, 'fooooo' was the title of the page and the elements in the list were printed.
