@@ -1,0 +1,25 @@
+Team YVC: Victoria Gao, Yi Ling Wu, Constance Chen
+SoftDev
+K11 -- Some Things Never Change (using flask to serve static files)
+2020-10-15
+
+*Prediction: 
+After activating a virtual environment and running app.py in the terminal, http://localhost:5000/static/foo and http://localhost:5000/static/foo.html will display
+text on a webpage.  
+
+http://localhost:5000/static/foo will lead to a webpage with the following lines printed:
+"this here some plaintext tho
+Q: What happens when you access this file
+     via http://localhost:5000/static/foo ?"
+
+http://localhost:5000/static/foo.html will lead to a webpage with the following lines printed:
+"this here some plaintext tho" will be printed into the browser.
+
+-The directory that app.py is in is like a home directory of the localhost.  To access a static file via http://localhost:5000/static/<static_file_name>, 
+we placed all the static files in a directory called static that is at the same level as app.py in the virtual environment.
+
+-After running app.py in the terminal, each visit or refresh of http://localhost:5000/static/foo led to the download of a file called foo (foo is placed 
+in the Downloads folder.  
+http://localhost:5000/static/foo doesn't redirect the user to another page.
+http://localhost:5000/static/foo.html leads to a webpage displaying "this here some plaintext tho" on a webpage.
+
