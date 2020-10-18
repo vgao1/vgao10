@@ -25,11 +25,6 @@ def get_job():
         percentages = [percent[0] for percent in dictionary.values()]
         random_job = random.choices(list(dictionary.keys()),weights = percentages, k=1)
         return render_template('tablified.html',
-                           heading = """
-                            Team Sleep Deprived: Victoria Gao, Renee Mui, Anya Zorin
-                            SoftDev
-                            K13 -- Template for Success
-                            2020-10-19""",
                            title = "K13 -- Template for Success",
                            jobs = list(dictionary.keys()),
                            percents = percentages,
