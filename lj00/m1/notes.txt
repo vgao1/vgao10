@@ -3,29 +3,41 @@ SoftDev
 LJ00: Le Voyage de Learnination avec Mongo, Première Phase
 2020-10-29
 
-What is the MongoDB Database?
--Database: a structured way to store and acess data
+Before asking questions check the class forum to see if it has already been answered :
+https://discourse.university.mongodb.com/c/M001
+
+Database: a structured way to store and acess data
 -The MongoDB database is a NoSQL document database because MongoDB stores data in documents instead of tables, rows, and columns.  
 These documents are stored in collections of documents.
 
-What is a Document in MongoDB?
--A document organizes and stores data as a set of field-value pairs.
+Document: organizes and stores data as a set of field-value pairs.
 {
 	<field>:<value>,
 	<field>:<value>
 }
-<field> is a unique identifier.  <value> is data related to an identifier.
+<field> is a unique identifier.  
+<value> is data related to an identifier.
 
--A collection contains many documents that often share fields.
-A database contains multiple collections.
+Collection: contains many documents that usually has common fields between 
+documents. There can be many collections per database and many documents per collection.
 
-What is MongoDB Atlas?
--MongoDB is used in the Atlas cloud database for data storage and retrieval.
--Clusters are groups of servers that store data.  When a cluster is deployed,
-the servers are configured as a replica set by default, which is a few connected MongoDB instances
-that store the same data.  This setup ensures that if something happens to one of the machines in the replica set,
-the data will be available for an application by the working members of the replica set.
--An instance is a single machine in the cloud or locally that runs software.  Atlas is a MongoDB database run in the cloud. 
--Atlas manages cluster creation, run and maintain database deployment (include deploying cloud service
+MongoDB Atlas: MongoDB is used in the Atlas cloud database for data storage and retrieval.
+Atlas manages cluster creation, run and maintain database deployment (include deploying cloud service
 providers that users choose), and allows users to experiment with new tools and features.
 -Free-tier: charts, realm, small-scale app
+
+Cluster: group of servers that store data.  When a cluster is deployed,
+the servers are configured as a replica set by default, which is a few connected machines
+that store the same data.  This setup ensures that if something happens to one of the machines in the replica set,
+the data will be available for an application by the working members of the replica set.
+
+Instance: a single machine in the cloud or locally that runs software.  Atlas is a MongoDB database run in the cloud. 
+
+Personal/Team Notes:
+- use the in browser IDE for the labs
+- you don't have to download anything
+- the Atlas interface has lots of useful things
+- it includes statistics on the database
+- you can add and delete users, but we will not really be dealing with that in this course
+- you connect to atlas using the connection link you get from clicking the connect button 
+on the Atlas interface for the cluster. 
