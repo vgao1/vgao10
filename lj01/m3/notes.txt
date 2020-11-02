@@ -1,7 +1,7 @@
 Team Apple Tree: Victoria Gao, Amelia Chin, Andrew Jiang
 SoftDev
 LJ01: Le Voyage de Learnination avec Mongo, Deuxième Phase
-2020-11-12
+2020-11-02
 
 -Every document must have a _id field and a unique _id value.
 -Other than the _id field, documents do not need unique values for other fields.
@@ -11,7 +11,7 @@ are disorganized.
 
 -Through the user interface, click on a MongoDB collection and then the "Insert Document" button to the top right 
 corner of the screen. 
-A document can be edited with JSON notation by clicking curly brackets in the view menu or you can edit 
+A document can be edited with JSON notation by clicking curly brackets icon in the view menu or you can edit 
 one field-value pair at a time using default view (3 bullet points and 3 lines icon).
 
 -When a new document is inserted, the default value for the _id field is of type ObjectId().
