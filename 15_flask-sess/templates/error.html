@@ -1,0 +1,33 @@
+<!--
+Team Sharp Cat - Victoria Gao, Alvin Wu, Jonathan Lee, Madelyn Mao
+SoftDev
+K15 -- Sessions Greeting
+2020-12-10
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Login Error </title>
+</head>
+
+<body>
+  <!-- Display team name and roster -->
+  <h1> Team SharpCat </h1>
+  <h2>
+    Roster: Victoria Gao, Alvin Wu, Jonathan Lee, Madelyn Mao
+  </h2>
+  Sorry, you are not authorized.
+  <br></br>
+
+  <!-- Display message explaining what went wrong -->
+  Problem: {{ error }}
+  <br></br>
+
+  <!-- Try Again button -->
+  <form action="/logout">
+    <input type="submit" value="Try Again">
+  </form>
+</body>
+
+</html>
