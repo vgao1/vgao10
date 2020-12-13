@@ -18,7 +18,7 @@ app.secret_key = <randomly_generated_string>
 -To log out, we removed the username data from session with session.pop('username',None).  
 
 -Test Cases we checked:
-  -if any of the username or password fields are empty or both empty
+  	-if any of the username or password fields are empty or both empty
 	-if any of the username or password fields or both are incorrect
 
 -print("*** DIAG: request.args['username'] ***") prints a diagnostic print statement ("*** DIAG: request.args['username'] ***")
