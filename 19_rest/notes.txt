@@ -1,0 +1,13 @@
+Team Cosmic Stardust- Victoria Gao, Jessica Yeung, Andrew Jiang
+SoftDev
+K19 -- A RESTful Journey Skyward
+2020-04-05
+
+-Making a simple HTTP request using the key yields a JSON object containing info such as date, explanation, and img urls.
+-We inported urllib.request instead of urllib2 due to error messages stating that urllib2 module does not exist.
+-data["url"] refers to the img url
+-data["explanation"] refers to the description explaining what the img is showing
+-We read the API key in .txt file as a String with file = open('key_nasa.txt','r') and key = file.open()
+In app.py, we concatenated "https://api.nasa.gov/planetary/apod?api_key=" and the API key, which was then used as the 
+input for .urlopen().
+-Using jinja, we inserted info from the JSON object that was read by app.py into index.html
