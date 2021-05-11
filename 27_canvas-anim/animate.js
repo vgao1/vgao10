@@ -1,6 +1,6 @@
 // Team DVD (Victoria Gao, Dean Carey)
 // SoftDev pd0
-// K27 -- canvas based JS animation
+// K27 -- Guarding Against Burnout
 // 2021-05-07w
 
 // model for HTML5 canvas-based animation
