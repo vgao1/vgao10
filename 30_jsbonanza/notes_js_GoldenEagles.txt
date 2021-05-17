@@ -3,13 +3,17 @@ SoftDev pd0
 K30 -- JSorcery
 2021-05-14
 
--When the user clicks a point inside the canvas, a shape is dropped from that point and the shape bounces when it hits a border
-of the canvas.
+-When the user clicks on a point inside the canvas, a shape is dropped from that point 
+and the shape bounces when it hits a border of the canvas.
 -The default shape that is drawn is a square. 
--If the user clicks the "Toggle Shape" button and the previous shape mode was a square, the shape mode would become a right triangle. 
-If the "Toggle Shape" button is clicked and the previous shape mode was a triangle, the shape mode would become a circle.
-If the "Toggle Shape" button is clicked and the previous shape mdoe was a circle, the shape mode would become a square.
--If a user clicks in the canvas for a shape mode when that shape is already drawn, that shape in the canvas will be erased
-and redrawn at the point the user just clicked on; the color of the shape might change due to the color of the shape
-being determined by random integers.
+-If the user clicks the "Toggle Shape" button and the previous shape mode was a square, 
+the shape mode becomes a right triangle. 
+-If the "Toggle Shape" button is clicked and the previous shape mode was a triangle, 
+the shape mode becomes a circle.
+-If the "Toggle Shape" button is clicked and the previous shape mode was a circle, 
+the shape mode becomes a square.
+-If a user clicks in the canvas for a shape mode when that shape is already drawn, 
+that shape in the canvas will be erased and redrawn at the point the user just clicked on; 
+the color of the shape might change due to the generation of a new random integer 
+for the shape's color.
 -The "Clear" button erases all the shapes in the canvas.
